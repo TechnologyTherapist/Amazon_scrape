@@ -1,0 +1,16 @@
+Introduction:
+For this assignment, I have chosen Reliance Retail, a well-known retail brand with multiple stores in India. The goal is to scrape the store locations, store name, address, timings, coordinates, and phone number of each store and store it in a CSV file.
+
+Data Collection:
+To collect the data, I have used Python and Beautiful Soup library for web scraping. I have identified the URL of the store locator page of the Reliance Retail website and extracted the HTML content. Then, I have used Beautiful Soup to parse the HTML content and extract the necessary information.
+
+Challenges:
+The biggest challenge was to extract the coordinates of each store. The website did not provide the coordinates, so I had to use Geopy, a Python library for geocoding and reverse geocoding, to get the latitude and longitude of each store. It required sending a request to the Geocoding API for each store, which took time and resources.
+
+Another challenge was to handle the inconsistencies in the data. For example, some stores had multiple phone numbers or timings, and the format of the address was not consistent across all stores.
+
+Data Storage:
+I have stored the extracted data in a CSV file using the Python Pandas library. Each row represents a store, and the columns are Store Name, Address, Timings, Latitude, Longitude, and Phone Number.
+
+Conclusion:
+In conclusion, web scraping is a powerful tool for collecting data from various sources. However, it requires careful attention to the structure of the website and handling inconsistencies in the data. Geocoding was a challenging task, but it added valuable information to the dataset. The CSV file and Python script have been uploaded to the GitHub repository for future reference.
